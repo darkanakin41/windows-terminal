@@ -4,7 +4,7 @@
     [
         {
             "acrylicOpacity" : 0.3,
-            "backgroundImage" : "%OneDriveCommercial%/__tools__/terminal/wp/Low/wp-github.jpg",
+            "backgroundImage" : "https://raw.githubusercontent.com/darkanakin41/windows-terminal/master/wp/Low/wp-github.jpg",
             "backgroundImageOpacity" : 0.2,
             "closeOnExit" : true,   
             "colorScheme" : "Terminal",
@@ -15,7 +15,7 @@
             "fontSize" : 10,
             "guid" : "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
             "historySize" : 9001,
-            "icon" : "%OneDriveCommercial%/__tools__/terminal/ico/GitHub-Light.png",
+            "icon" : "https://raw.githubusercontent.com/darkanakin41/windows-terminal/master/ico/GitHub-Light.png",
             "name" : "Projets",
             "padding" : "20,20,20,20",
             "snapOnInput" : true,
@@ -24,9 +24,10 @@
         },
         {
             "acrylicOpacity" : 0.3,
-            "backgroundImage" : "%OneDriveCommercial%/__tools__/terminal/wp/low/wp-devbox.jpg",
+            "backgroundImage" : "https://raw.githubusercontent.com/darkanakin41/windows-terminal/master/wp/low/wp-devbox.jpg",
             "backgroundImageOpacity" : 0.3,
-			"backgroundImageStretchMode" : "uniformToFill",
+            "backgroundImageStretchMode" : "uniformToFill",
+            "commandline": "ssh docker@portainer.test",
             "closeOnExit" : true,
             "colorScheme" : "Devbox",
             "cursorColor" : "#0F0", 
@@ -35,18 +36,18 @@
             "fontSize" : 10,
             "guid" : "{9acb9455-ca41-5af7-950f-6bca1bc9722f}",
             "historySize" : 9001,
-            "icon" : "%OneDriveCommercial%/__tools__/terminal/ico/default.png",
+            "icon" : "https://raw.githubusercontent.com/darkanakin41/windows-terminal/master/ico/default.png",
             "name" : "Devbox",
             "padding" : "20,20,20,20",
             "snapOnInput" : true,
             "startingDirectory" : "%MUTAGEN_HELPER_PATH%",
-            "useAcrylic" : true,
-			"experimental.retroTerminalEffect": true
+            "useAcrylic" : true
+			//"experimental.retroTerminalEffect": true
         },
         // Powershell configuration
         {
 			"acrylicOpacity" : 0.3,
-            "backgroundImage" : "%OneDriveCommercial%/__tools__/terminal/wp/gif/loop.gif",
+            "backgroundImage" : "https://raw.githubusercontent.com/darkanakin41/windows-terminal/master/wp/gif/loop.gif",
 			"backgroundImageOpacity" : 0.05,
             "closeOnExit" : true,
             "colorScheme" : "Powershell",
@@ -57,13 +58,13 @@
             "fontSize" : 10,
             "guid" : "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
             "historySize" : 9001,
-            "icon" : "%OneDriveCommercial%/__tools__/terminal/ico/PowerShell-Blue.png",
+            "icon" : "https://raw.githubusercontent.com/darkanakin41/windows-terminal/master/ico/PowerShell-Blue.png",
             "name" : "Windows PS",
             "padding" : "20,20,20,20",
             "snapOnInput" : true,
             "startingDirectory" : "%USERPROFILE%",
-            "useAcrylic" : true,
-			"experimental.retroTerminalEffect": true
+            "useAcrylic" : true
+			//"experimental.retroTerminalEffect": true
         },
         {
             "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
