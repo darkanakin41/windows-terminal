@@ -1,59 +1,62 @@
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "profiles" : {
+    "defaultProfile": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+    "profiles": {
         "defaults": {
-            "acrylicOpacity" : 0.3,
-            "backgroundImageOpacity" : 0.5,
-            "backgroundImageStretchMode" : "uniformToFill",
-            "closeOnExit" : true,
-            "colorScheme" : "Terminal",
-            "cursorColor" : "#FFFFFF", 
-            "cursorShape" : "filledBox", // bar, vintage, filledBox, emptyBox, box
-            "fontFace" : "Ubuntu Mono", // "Cascadia Mono" "Ubuntu Mono"
-            "fontSize" : 10,
-            "historySize" : 9001,
-            "padding" : "20,20,20,20",
-            "snapOnInput" : true,
-            "startingDirectory" : "%MUTAGEN_HELPER_PATH%",
-            "useAcrylic" : true
+            "acrylicOpacity": 0.3,
+            "backgroundImageOpacity": 0.5,
+            "backgroundImageStretchMode": "uniformToFill",
+            "closeOnExit": true,
+            "colorScheme": "Terminal",
+            "cursorColor": "#FFFFFF",
+            // bar, vintage, filledBox, emptyBox, box,
+            "cursorShape": "filledBox",
+            // "Cascadia Mono" "Ubuntu Mono",
+            "fontFace": "Ubuntu Mono",
+            "fontSize": 10,
+            "historySize": 9001,
+            "padding": "20,20,20,20",
+            "snapOnInput": true,
+            "startingDirectory": "%MUTAGEN_HELPER_PATH%",
+            "useAcrylic": true
         },
-        "list" : [
+        "list": [
             {
                 // Classic Command Line
-                "backgroundImage" : "https://raw.githubusercontent.com/pooley/windows-terminal-settings/master/wp/wp-github.jpg",
-                "commandline" : "cmd.exe",
-                "guid" : "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-                "icon" : "https://raw.githubusercontent.com/pooley/windows-terminal-settings/master/ico/github-dark.png",
-                "name" : "Projets"
+                "backgroundImage": "https://raw.githubusercontent.com/pooley/windows-terminal-settings/master/wp/wp-github.jpg",
+                "commandline": "cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "icon": "https://raw.githubusercontent.com/pooley/windows-terminal-settings/master/ico/github-dark.png",
+                "name": "Projets"
             },
             {
                 // Devbox
-                "backgroundImage" : "https://raw.githubusercontent.com/pooley/windows-terminal-settings/master/wp/wp-devbox.jpg",
+                "backgroundImage": "https://raw.githubusercontent.com/pooley/windows-terminal-settings/master/wp/wp-vmware.jpg",
                 "commandline": "ssh docker@portainer.test",
-                "colorScheme" : "Devbox",
-                "cursorColor" : "#0F0", 
-                "guid" : "{9acb9455-ca41-5af7-950f-6bca1bc9722f}",
-                "icon" : "https://raw.githubusercontent.com/pooley/windows-terminal-settings/master/ico/vmware.png",
-                "name" : "Devbox"
+                "colorScheme": "Devbox",
+                "guid": "{9acb9455-ca41-5af7-950f-6bca1bc9722f}",
+                "icon": "https://raw.githubusercontent.com/pooley/windows-terminal-settings/master/ico/vmware.png",
+                "name": "Devbox"
             },
             {
                 // Git Bash
-                "backgroundImage" : "https://raw.githubusercontent.com/pooley/windows-terminal-settings/master/wp/wp-git.jpg",
-                "commandline" : "%PROGRAMFILES%\\Git\\bin\\bash.exe",
-                "fontFace" : "Cascadia Code PL", // "Cascadia Mono", "Ubuntu Mono", "IBM Plex Mono"
-                "guid" : "{00000000-0000-0000-ba54-000000000001}",
-                "icon" : "https://raw.githubusercontent.com/pooley/windows-terminal-settings/master/ico/git-dark.png",
-                "name" : "Git Bash"
+                "backgroundImage": "https://raw.githubusercontent.com/pooley/windows-terminal-settings/master/wp/wp-git.jpg",
+                "commandline": "%PROGRAMFILES%\\Git\\bin\\bash.exe",
+                // "Cascadia Mono", "Ubuntu Mono", "IBM Plex Mono",
+                "fontFace": "Cascadia Code PL",
+                "guid": "{00000000-0000-0000-ba54-000000000001}",
+                "icon": "https://raw.githubusercontent.com/pooley/windows-terminal-settings/master/ico/git-dark.png",
+                "name": "Git Bash"
             },
             // Powershell configuration
             {
-                "backgroundImage" : "https://raw.githubusercontent.com/pooley/windows-terminal-settings/master/wp/gif/loop.gif",
-                "colorScheme" : "Powershell",
-                "commandline" : "powershell.exe",
-                "cursorColor" : "#6CB8FF",
-                "guid" : "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-                "icon" : "https://raw.githubusercontent.com/pooley/windows-terminal-settings/master/ico/posh-blue.png",
-                "name" : "Windows PS"
+                "backgroundImage": "https://raw.githubusercontent.com/pooley/windows-terminal-settings/master/wp/gif/loop.gif",
+                "colorScheme": "Powershell",
+                "commandline": "powershell.exe",
+                "cursorColor": "#6CB8FF",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "icon": "https://raw.githubusercontent.com/pooley/windows-terminal-settings/master/ico/posh-blue.png",
+                "name": "Windows PS"
             },
             {
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
@@ -66,57 +69,167 @@
                 "hidden": false,
                 "name": "Ubuntu-18.04",
                 "source": "Windows.Terminal.Wsl"
-            }       
+            }
         ]
     },
-    "globals" : 
-    {
-        "alwaysShowTabs" : true,
-        "defaultProfile" : "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-        "disabledProfileSources": ["Windows.Terminal.Azure"],
-        "initialCols" : 120,
-        "initialRows" : 30,
-        "keybindings" : 
-        [
-            {"command": "closePane", "keys": "ctrl+shift+w"},
-            {"command": "copy", "keys": "ctrl+shift+c"},
-            {"command": "duplicateTab", "keys": "ctrl+shift+d"},
-            {"command": "newTab", "keys": "ctrl+shift+t"},
-            {"command": "newTabProfile0", "keys": "ctrl+shift+1"},
-            {"command": "newTabProfile1", "keys": "ctrl+shift+2"},
-            {"command": "newTabProfile2", "keys": "ctrl+shift+3"},
-            {"command": "newTabProfile3", "keys": "ctrl+shift+4"},
-            {"command": "newTabProfile4", "keys": "ctrl+shift+5"},
-            {"command": "newTabProfile5", "keys": "ctrl+shift+6"},
-            {"command": "newTabProfile6", "keys": "ctrl+shift+7"},
-            {"command": "newTabProfile7", "keys": "ctrl+shift+8"},
-            {"command": "newTabProfile8", "keys": "ctrl+shift+9"},
-            {"command": "nextTab", "keys": "ctrl+tab"},
-            {"command": "openSettings", "keys": "ctrl+,"},
-            {"command": "paste", "keys": "ctrl+shift+v"},
-            {"command": "prevTab", "keys": "ctrl+shift+tab"},
-            {"command": "scrollDownPage", "keys": "ctrl+shift+pgdn"},
-            {"command": "scrollUp", "keys": "ctrl+shift+up"},
-            {"command": "scrollUpPage", "keys": "ctrl+shift+pgup"},
-            {"command": { "action": "splitPane", "split": "horizontal"}, "keys": "ctrl+shift+down"},
-            {"command": { "action": "splitPane", "split": "vertical"}, "keys": "ctrl+shift+right"},
-            {"command": { "action": "splitPane", "split": "horizontal", "splitMode": "duplicate"}, "keys": "ctrl+alt+shift+down"},
-            {"command": { "action": "splitPane", "split": "vertical", "splitMode": "duplicate"}, "keys": "ctrl+alt+shift+right"},
-            {"command": "switchToTab0", "keys": "ctrl+alt+1"},
-            {"command": "switchToTab1", "keys": "ctrl+alt+2"},
-            {"command": "switchToTab2", "keys": "ctrl+alt+3"},
-            {"command": "switchToTab3", "keys": "ctrl+alt+4"},
-            {"command": "switchToTab4", "keys": "ctrl+alt+5"},
-            {"command": "switchToTab5", "keys": "ctrl+alt+6"},
-            {"command": "switchToTab6", "keys": "ctrl+alt+7"},
-            {"command": "switchToTab7", "keys": "ctrl+alt+8"},
-            {"command": "switchToTab8", "keys": "ctrl+alt+9"}
-        ],
-        "requestedTheme" : "system",
-        "showTabsInTitlebar" : true,
-        "showTerminalTitleInTitlebar" : true,
-        "wordDelimiters" : " ./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}~?\u2502"
-    },
+    "alwaysShowTabs": true,
+    "disabledProfileSources": [
+        "Windows.Terminal.Azure"
+    ],
+    "initialCols": 120,
+    "initialRows": 30,
+    "keybindings": [
+        {
+            "command": "closePane",
+            "keys": "ctrl+shift+w"
+        },
+        {
+            "command": "copy",
+            "keys": "ctrl+shift+c"
+        },
+        {
+            "command": "duplicateTab",
+            "keys": "ctrl+shift+d"
+        },
+        {
+            "command": "newTab",
+            "keys": "ctrl+shift+t"
+        },
+        {
+            "command": "newTabProfile0",
+            "keys": "ctrl+shift+1"
+        },
+        {
+            "command": "newTabProfile1",
+            "keys": "ctrl+shift+2"
+        },
+        {
+            "command": "newTabProfile2",
+            "keys": "ctrl+shift+3"
+        },
+        {
+            "command": "newTabProfile3",
+            "keys": "ctrl+shift+4"
+        },
+        {
+            "command": "newTabProfile4",
+            "keys": "ctrl+shift+5"
+        },
+        {
+            "command": "newTabProfile5",
+            "keys": "ctrl+shift+6"
+        },
+        {
+            "command": "newTabProfile6",
+            "keys": "ctrl+shift+7"
+        },
+        {
+            "command": "newTabProfile7",
+            "keys": "ctrl+shift+8"
+        },
+        {
+            "command": "newTabProfile8",
+            "keys": "ctrl+shift+9"
+        },
+        {
+            "command": "nextTab",
+            "keys": "ctrl+tab"
+        },
+        {
+            "command": "openSettings",
+            "keys": "ctrl+,"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+shift+v"
+        },
+        {
+            "command": "prevTab",
+            "keys": "ctrl+shift+tab"
+        },
+        {
+            "command": "scrollDownPage",
+            "keys": "ctrl+shift+pgdn"
+        },
+        {
+            "command": "scrollUp",
+            "keys": "ctrl+shift+up"
+        },
+        {
+            "command": "scrollUpPage",
+            "keys": "ctrl+shift+pgup"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "horizontal"
+            },
+            "keys": "ctrl+shift+down"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "vertical"
+            },
+            "keys": "ctrl+shift+right"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "horizontal",
+                "splitMode": "duplicate"
+            },
+            "keys": "ctrl+alt+shift+down"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "vertical",
+                "splitMode": "duplicate"
+            },
+            "keys": "ctrl+alt+shift+right"
+        },
+        {
+            "command": "switchToTab0",
+            "keys": "ctrl+alt+1"
+        },
+        {
+            "command": "switchToTab1",
+            "keys": "ctrl+alt+2"
+        },
+        {
+            "command": "switchToTab2",
+            "keys": "ctrl+alt+3"
+        },
+        {
+            "command": "switchToTab3",
+            "keys": "ctrl+alt+4"
+        },
+        {
+            "command": "switchToTab4",
+            "keys": "ctrl+alt+5"
+        },
+        {
+            "command": "switchToTab5",
+            "keys": "ctrl+alt+6"
+        },
+        {
+            "command": "switchToTab6",
+            "keys": "ctrl+alt+7"
+        },
+        {
+            "command": "switchToTab7",
+            "keys": "ctrl+alt+8"
+        },
+        {
+            "command": "switchToTab8",
+            "keys": "ctrl+alt+9"
+        }
+    ],
+    "requestedTheme": "system",
+    "showTabsInTitlebar": true,
+    "showTerminalTitleInTitlebar": true,
+    "wordDelimiters": " ./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}~?\u2502",
     // Add custom color schemes to this array
     "schemes": [
         {
@@ -142,7 +255,7 @@
         },
         {
             "name": "Devbox",
-            "foreground" : "#0F0",
+            "foreground": "#fff",
             "background": "#282828",
             "black": "#161616",
             "red": "#ff3756",
@@ -163,7 +276,7 @@
         },
         {
             "name": "Powershell",
-			"foreground" : "#6CB8FF",
+            "foreground": "#6CB8FF",
             "background": "#000000",
             "black": "#2A2A2A",
             "red": "#F65656",
