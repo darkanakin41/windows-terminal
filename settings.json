@@ -8,7 +8,6 @@
             "backgroundImageStretchMode": "uniformToFill",
             "closeOnExit": true,
             "colorScheme": "Terminal",
-            "cursorColor": "#FFFFFF",
             // bar, vintage, filledBox, emptyBox, box,
             "cursorShape": "filledBox",
             // "Cascadia Mono" "Ubuntu Mono",
@@ -96,40 +95,24 @@
             "keys": "ctrl+shift+t"
         },
         {
-            "command": "newTabProfile0",
+            "command": { "action": "newTab", "index": 0 },
             "keys": "ctrl+shift+1"
         },
         {
-            "command": "newTabProfile1",
+            "command": { "action": "newTab", "index": 1 },
             "keys": "ctrl+shift+2"
         },
         {
-            "command": "newTabProfile2",
+            "command": { "action": "newTab", "index": 2 },
             "keys": "ctrl+shift+3"
         },
         {
-            "command": "newTabProfile3",
+            "command": { "action": "newTab", "index": 3 },
             "keys": "ctrl+shift+4"
         },
         {
-            "command": "newTabProfile4",
+            "command": { "action": "newTab", "index": 4 },
             "keys": "ctrl+shift+5"
-        },
-        {
-            "command": "newTabProfile5",
-            "keys": "ctrl+shift+6"
-        },
-        {
-            "command": "newTabProfile6",
-            "keys": "ctrl+shift+7"
-        },
-        {
-            "command": "newTabProfile7",
-            "keys": "ctrl+shift+8"
-        },
-        {
-            "command": "newTabProfile8",
-            "keys": "ctrl+shift+9"
         },
         {
             "command": "nextTab",
@@ -234,6 +217,7 @@
     "schemes": [
         {
             "name": "Terminal",
+            "cursorColor": "#FFFFFF",
             "foreground": "#fff",
             "background": "#282828",
             "black": "#161616",
