@@ -3,15 +3,13 @@
     "defaultProfile": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
     "profiles": {
         "defaults": {
-            "acrylicOpacity": 0.3,
-            "backgroundImageOpacity": 0.5,
+            "acrylicOpacity": 0.75,
+            "backgroundImageOpacity": 0.15,
             "backgroundImageStretchMode": "uniformToFill",
             "closeOnExit": true,
             "colorScheme": "Terminal",
-            // bar, vintage, filledBox, emptyBox, box,
-            "cursorShape": "filledBox",
-            // "Cascadia Mono" "Ubuntu Mono",
-            "fontFace": "Ubuntu Mono",
+            "cursorShape": "filledBox", // bar, vintage, filledBox, emptyBox, box,
+            "fontFace": "Ubuntu Mono", // "Cascadia Mono" "Ubuntu Mono",
             "fontSize": 10,
             "historySize": 9001,
             "padding": "20,20,20,20",
@@ -32,23 +30,29 @@
                 // Devbox
                 "backgroundImage": "https://raw.githubusercontent.com/pooley/windows-terminal-settings/master/wp/wp-vmware.jpg",
                 "commandline": "ssh docker@portainer.test",
-                "colorScheme": "Devbox",
                 "guid": "{9acb9455-ca41-5af7-950f-6bca1bc9722f}",
                 "icon": "https://raw.githubusercontent.com/pooley/windows-terminal-settings/master/ico/vmware.png",
                 "name": "Devbox"
             },
             {
+                // WSL Debian
+                "backgroundImage": "https://raw.githubusercontent.com/darkanakin41/windows-terminal-settings/master/wp/wp-github.jpg",
+                "commandline": "wsl.exe ~ -d Debian -u root",
+                "colorScheme": "Devbox",
+                "icon": "https://raw.githubusercontent.com/pooley/windows-terminal-settings/master/icon/debian-dark.png",
+                "name": "Debian (root)"
+            },
+            {
                 // Git Bash
-                "backgroundImage": "https://raw.githubusercontent.com/pooley/windows-terminal-settings/master/wp/wp-git.jpg",
+                "backgroundImage": "https://raw.githubusercontent.com/pooley/windows-terminal/master/wp/wp-git.jpg",
                 "commandline": "%PROGRAMFILES%\\Git\\bin\\bash.exe",
-                // "Cascadia Mono", "Ubuntu Mono", "IBM Plex Mono",
-                "fontFace": "Cascadia Code PL",
+                "fontFace": "Cascadia Code PL", // "Cascadia Mono", "Ubuntu Mono", "IBM Plex Mono",
                 "guid": "{00000000-0000-0000-ba54-000000000001}",
                 "icon": "https://raw.githubusercontent.com/pooley/windows-terminal-settings/master/ico/git-dark.png",
                 "name": "Git Bash"
             },
-            // Powershell configuration
             {
+                // Powershell configuration
                 "backgroundImage": "https://raw.githubusercontent.com/pooley/windows-terminal-settings/master/wp/gif/loop.gif",
                 "colorScheme": "Powershell",
                 "commandline": "powershell.exe",
@@ -62,12 +66,6 @@
                 "hidden": false,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
-            },
-            {
-                "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
-                "hidden": false,
-                "name": "Ubuntu-18.04",
-                "source": "Windows.Terminal.Wsl"
             }
         ]
     },
