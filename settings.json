@@ -39,7 +39,7 @@
                 "backgroundImage": "https://raw.githubusercontent.com/darkanakin41/windows-terminal-settings/master/wp/wp-github.jpg",
                 "commandline": "wsl.exe ~ -d Debian -u root",
                 "colorScheme": "Devbox",
-                "icon": "https://raw.githubusercontent.com/pooley/windows-terminal-settings/master/icon/debian-dark.png",
+                "icon": "https://raw.githubusercontent.com/darkanakin41/windows-terminal/master/icon/debian-dark.png",
                 "name": "Debian (root)"
             },
             {
